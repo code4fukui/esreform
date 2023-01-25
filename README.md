@@ -10,5 +10,6 @@ console.log(esreform("const res = await func();"));
 
 ## dependencies
 
-- [esprima](https://github.com/code4fukui/esprima)
-- [escodegen](https://github.com/code4fukui/escodegen)
+- [fixmyjs](https://github.com/code4fukui/fixmyjs)
+    - [esprima](https://github.com/code4fukui/esprima)
+    - [escodegen](https://github.com/code4fukui/escodegen)
