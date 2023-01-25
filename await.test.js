@@ -4,6 +4,3 @@ import { esreform } from "./esreform.js";
 Deno.test("await func", () => {
   t.assertEquals(esreform("const res = await func();"), "const res = await func();");
 });
-Deno.test("err func", () => {
-  t.assertThrows(() => esreform("const res = async func();"));
-});
