@@ -8,6 +8,10 @@ import { esreform } from "https://code4fukui.github.io/esreform/esreform.js";
 console.log(esreform("const res = await func();"));
 ```
 
+## demo
+
+- [esreform, reform JavaScript code: JS → AST → JS](https://code4fukui.github.io/esreform/)
+
 ## dependencies
 
 - [fixmyjs](https://github.com/code4fukui/fixmyjs)
