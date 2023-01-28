@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>esreform, reform JavaScript code: JS → AST → JS</title>
+</head>
+<body>
+<h1>esreform, reform JavaScript code: JS → AST → JS</h1>
+<p>using <a href="http://github.com/code4fukui/acorn-es/">acorn-es</a> as parser,
+and using <a href="https://github.com/code4fukui/escodegen">escodegen</a> as code generator</p>
+<textarea id="textarea" rows="10" cols="30" placeholder="write your code">for(let i=1;i<=100;i++){if(i%15===0){console.log('FizzBuzz')}else if(i%3===0){console.log('Fizz')}else if(i%5===0){console.log('Buzz')}else{console.log(i)}}</textarea>
+<textarea id="output"></textarea>
+<hr>
+<a href=https://github.com/code4fukui/esreform/>esreform - src on GitHub</a><br>
+
+<script type="module">
+import { esreform } from "./esreform.js";
+
+const show = () => {
+  try {
+    output.value = esreform(textarea.value)
+  } catch (e) {
+    output.value = JSON.stringify(e, null, 2);
+  }
+};
+show();
+textarea.addEventListener("input", show, false);
+</script>
+</head>
+
+<style>
+textarea {
+  width: 80vw;
+  height: 16em;
+}
+a {
+  color: gray !important;
+}
+</style>
+
+</body>
+</html>
