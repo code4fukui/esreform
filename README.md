@@ -1,5 +1,7 @@
 # esreform
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 esreform is an ES module to reformat JavaScript code.
 
 ## Demo
