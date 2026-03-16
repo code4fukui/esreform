@@ -23,4 +23,4 @@ console.log(esreform("const res = await func();"));
 ```
 
 ## License
-MIT
+MIT License — see [LICENSE](LICENSE).
